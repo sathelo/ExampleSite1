@@ -1,0 +1,11 @@
+@import "./vendors/normalize.css";
+@import "base.scss";
+@import "ui.scss";
+@import "./sections/squad.scss";
+
+@font-face {
+  font-family: "Gerbera";
+  src: url("/font/Gerbera.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}

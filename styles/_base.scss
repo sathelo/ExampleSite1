@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  padding: 0 1rem;
+}
+
+h3 {
+  font-family: Gerbera;
+  font-size: 34px;
+  line-height: 48px;
+
+  color: #000000;
+}
+
+h2 {
+  font-family: Gerbera;
+  font-size: 40px;
+  line-height: 52px;
+
+  color: #084242;
+}
