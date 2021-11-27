@@ -7,13 +7,6 @@
     justify-content: center;
 
     gap: 96px;
-
-    .commands-card-list {
-      display: flex;
-      flex-direction: column;
-
-      gap: 40px;
-    }
   }
 
   &__text {
@@ -75,7 +68,9 @@
         padding-top: 52px;
       }
     }
-    .commands-card-img.commands-card-num {
+    &--image {
+      padding: 48px 36px 48px 48px;
+
       .commands-card__num {
         position: absolute;
 
@@ -83,8 +78,11 @@
         right: 12px;
       }
     }
-    &--image {
-      padding: 48px 36px 48px 48px;
-    }
+  }
+  &-card-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 40px;
   }
 }
