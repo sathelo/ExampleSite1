@@ -29,5 +29,12 @@
     @media screen and (max-width: 1439px) {
       display: block;
     }
+    @media screen and (max-width: 767px) {
+      text-align: center;
+
+      width: 100%;
+
+      padding: 14px 12px;
+    }
   }
 }
