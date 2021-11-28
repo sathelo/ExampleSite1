@@ -13,4 +13,21 @@
   text-decoration: none;
 
   padding: 18px 49px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  &-footer {
+    display: none;
+
+    font-size: 15px;
+    line-height: 20px;
+
+    padding: 18px 56px;
+
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+  }
 }

@@ -18,6 +18,10 @@ body {
   margin: 0 auto;
 
   padding: 0 1rem;
+
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
 }
 
 h3 {
@@ -26,6 +30,14 @@ h3 {
   line-height: 48px;
 
   color: #000000;
+
+  @media screen and (max-width: 768px) {
+    font-family: Gerbera;
+    font-size: 30px;
+    line-height: 40px;
+
+    color: #000000;
+  }
 }
 
 h2 {
@@ -34,4 +46,14 @@ h2 {
   line-height: 52px;
 
   color: #084242;
+
+  @media screen and (max-width: 768px) {
+    font-family: Gerbera;
+    font-size: 32px;
+    line-height: 40px;
+
+    text-align: center;
+
+    color: #084242;
+  }
 }

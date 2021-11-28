@@ -2,17 +2,39 @@
   padding: 144px 168px;
 
   background: #f3ebe1;
+
   &__body {
     display: flex;
     justify-content: center;
 
     gap: 96px;
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      gap: 48px;
+    }
   }
 
   &__text {
-    max-width: 288px;
     h2 {
       margin-bottom: 90px;
+
+      max-width: 288px;
+
+      @media screen and (max-width: 768px) {
+        margin-bottom: 0;
+
+        max-width: 387px;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
     }
   }
 
@@ -77,12 +99,28 @@
         top: 0px;
         right: 12px;
       }
+      @media screen and (max-width: 768px) {
+        padding: 32px 32px 31px 32px;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 32px;
     }
   }
+
   &-card-list {
     display: flex;
     flex-direction: column;
 
     gap: 40px;
+
+    @media screen and (max-width: 768px) {
+      gap: 32px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 72px 34px;
   }
 }
