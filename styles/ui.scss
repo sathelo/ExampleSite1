@@ -10,7 +10,37 @@
   background: #f26c55;
   border-radius: 12px;
 
+  opacity: 1;
+  transition: 0.5s;
+
   text-decoration: none;
 
   padding: 18px 49px;
+
+  @media screen and (max-width: 1439px) {
+    display: none;
+  }
+
+  &-footer {
+    display: none;
+
+    font-size: 15px;
+    line-height: 20px;
+
+    padding: 18px 56px;
+
+    @media screen and (max-width: 1439px) {
+      display: block;
+    }
+    @media screen and (max-width: 767px) {
+      text-align: center;
+
+      width: 100%;
+
+      padding: 14px 12px;
+    }
+  }
+}
+.button:hover {
+  opacity: 0.8;
 }

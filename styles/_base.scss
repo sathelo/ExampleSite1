@@ -18,6 +18,10 @@ body {
   margin: 0 auto;
 
   padding: 0 1rem;
+
+  @media screen and (max-width: 1439px) {
+    padding: 0;
+  }
 }
 
 h3 {
@@ -26,6 +30,16 @@ h3 {
   line-height: 48px;
 
   color: #000000;
+
+  @media screen and (max-width: 1439px) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 h2 {
@@ -34,4 +48,17 @@ h2 {
   line-height: 52px;
 
   color: #084242;
+
+  @media screen and (max-width: 1439px) {
+    font-size: 32px;
+    line-height: 40px;
+
+    text-align: center;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 26px;
+    line-height: 32px;
+
+    text-align: center;
+  }
 }
