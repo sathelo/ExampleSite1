@@ -10,6 +10,9 @@
   background: #f26c55;
   border-radius: 12px;
 
+  opacity: 1;
+  transition: 0.5s;
+
   text-decoration: none;
 
   padding: 18px 49px;
@@ -37,4 +40,7 @@
       padding: 14px 12px;
     }
   }
+}
+.button:hover {
+  opacity: 0.8;
 }
