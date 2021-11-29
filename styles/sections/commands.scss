@@ -10,7 +10,6 @@
     gap: 96px;
 
     @media screen and (max-width: 1439px) {
-      display: flex;
       align-items: center;
       flex-direction: column;
 
@@ -45,6 +44,17 @@
   }
 
   &-card {
+    &-list {
+      display: flex;
+      flex-direction: column;
+
+      gap: 40px;
+
+      @media screen and (max-width: 1439px) {
+        gap: 32px;
+      }
+    }
+
     position: relative;
 
     display: flex;
@@ -79,7 +89,7 @@
         line-height: 20px;
       }
     }
-    &-num {
+    &__num {
       font-family: Gerbera;
       font-size: 150px;
       line-height: 140px;
@@ -90,15 +100,54 @@
         font-size: 72px;
         line-height: 72px;
       }
-    }
-    &__num {
-      line-height: 100px;
+      span {
+        line-height: 100px;
 
-      @media screen and (max-width: 767px) {
-        line-height: 72px;
+        @media screen and (max-width: 767px) {
+          line-height: 72px;
+        }
       }
     }
-    &-img {
+
+    @media screen and (max-width: 1439px) {
+      padding: 32px;
+    }
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column-reverse;
+
+      padding: 20px;
+      gap: 12px;
+
+      border-radius: 20px;
+    }
+
+    &--image span {
+      position: absolute;
+
+      top: 0px;
+      right: 12px;
+
+      @media screen and (max-width: 767px) {
+        top: -10px;
+        left: 0;
+      }
+    }
+
+    &--image {
+      padding: 48px 36px 48px 48px;
+
+      @media screen and (max-width: 1439px) {
+        padding: 32px 32px 31px 32px;
+      }
+      @media screen and (max-width: 767px) {
+        padding: 20px;
+
+        gap: 20px;
+      }
+    }
+
+    &--image &__num {
       position: relative;
 
       img {
@@ -119,54 +168,6 @@
           padding: 24px 124px 0 0;
         }
       }
-    }
-
-    @media screen and (max-width: 1439px) {
-      padding: 32px;
-    }
-
-    @media screen and (max-width: 767px) {
-      flex-direction: column-reverse;
-
-      padding: 20px;
-      gap: 12px;
-
-      border-radius: 20px;
-    }
-
-    &--image {
-      padding: 48px 36px 48px 48px;
-
-      .commands-card__num {
-        position: absolute;
-
-        top: 0px;
-        right: 12px;
-
-        @media screen and (max-width: 767px) {
-          top: -10px;
-          left: 0;
-        }
-      }
-      @media screen and (max-width: 1439px) {
-        padding: 32px 32px 31px 32px;
-      }
-      @media screen and (max-width: 767px) {
-        padding: 20px;
-
-        gap: 20px;
-      }
-    }
-  }
-
-  &-card-list {
-    display: flex;
-    flex-direction: column;
-
-    gap: 40px;
-
-    @media screen and (max-width: 1439px) {
-      gap: 32px;
     }
   }
 
